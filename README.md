@@ -1,5 +1,6 @@
 # Formation TypeScript
 
+[![Build Status](https://travis-ci.org/DevInstitut/formation-typescript.svg?branch=master)](https://travis-ci.org/DevInstitut/formation-typescript)
 
 * Version en ligne : http://www.dev-institut.fr/formation-typescript
 * Contribuer : https://github.com/DevInstitut/formation-typescript
