@@ -1,0 +1,486 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Bibliothèque externe · Formation TypeScript</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Rossi Oddet">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../04-decorateur/" />
+    
+    
+    <link rel="prev" href="../02-types/12-classe.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../01-presentation/">
+            
+                <a href="../01-presentation/">
+            
+                    
+                    Présentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../01-presentation/01-installation.html">
+            
+                <a href="../01-presentation/01-installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../02-types/">
+            
+                <a href="../02-types/">
+            
+                    
+                    Système de types
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../02-types/01-boolean.html">
+            
+                <a href="../02-types/01-boolean.html">
+            
+                    
+                    boolean
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../02-types/02-number.html">
+            
+                <a href="../02-types/02-number.html">
+            
+                    
+                    number
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../02-types/03-string.html">
+            
+                <a href="../02-types/03-string.html">
+            
+                    
+                    string
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../02-types/04-tableau.html">
+            
+                <a href="../02-types/04-tableau.html">
+            
+                    
+                    tableau
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../02-types/05-tuple.html">
+            
+                <a href="../02-types/05-tuple.html">
+            
+                    
+                    tuple
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../02-types/06-void.html">
+            
+                <a href="../02-types/06-void.html">
+            
+                    
+                    void
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../02-types/07-any.html">
+            
+                <a href="../02-types/07-any.html">
+            
+                    
+                    any
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../02-types/08-enum.html">
+            
+                <a href="../02-types/08-enum.html">
+            
+                    
+                    enum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../02-types/09-cast.html">
+            
+                <a href="../02-types/09-cast.html">
+            
+                    
+                    cast
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../02-types/10-fonction.html">
+            
+                <a href="../02-types/10-fonction.html">
+            
+                    
+                    Fonction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../02-types/11-interface.html">
+            
+                <a href="../02-types/11-interface.html">
+            
+                    
+                    Interface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../02-types/12-classe.html">
+            
+                <a href="../02-types/12-classe.html">
+            
+                    
+                    Classe
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Bibliothèque externe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../04-decorateur/">
+            
+                <a href="../04-decorateur/">
+            
+                    
+                    Décorateurs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Bibliothèque externe</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="biblioth&#xE8;que-externe">Biblioth&#xE8;que externe</h1>
+<p>Le projet communautaire <a href="http://definitelytyped.org/" target="_blank">DefinitelyTyped</a> poss&#xE8;de une large base d&apos;interface pour les types des biblioth&#xE8;ques JavaScript les plus populaires.</p>
+<p>Il s&apos;y trouve des fichiers avec l&apos;extension <code>.d.ts</code> qui contiennent la liste de toutes les fonctions publiques des biblioth&#xE8;ques.</p>
+<p>Toutes les biblioth&#xE8;ques sont accessibles via un gestionnaire de packages : Typings (<a href="https://github.com/typings/typings" target="_blank">https://github.com/typings/typings</a>).</p>
+<p>Pour installer Typings :</p>
+<pre><code>npm install -g typings
+</code></pre><p>Pour rechercher une biblioth&#xE8;que.</p>
+<pre><code>typings search angular
+</code></pre><pre><code>adal-angular               dt     https://github.com/AzureAD/azure-activedirectory-library-for-js             1        2016-04-25T20:02:25.000Z
+adal-angular/adal          dt     https://github.com/AzureAD/azure-activedirectory-library-for-js             1        2016-07-02T16:42:13.000Z
+angular                    dt     http://angularjs.org                                                        2        2017-03-21T20:14:55.000Z
+angular-agility            dt     https://github.com/AngularAgility/AngularAgility                            1        2016-07-07T22:12:24.000Z
+</code></pre><p>Installer une fichier de d&#xE9;finition.</p>
+<pre><code>typings install dt~angular --global --save
+</code></pre><p>L&apos;option <code>--save</code> permet de sauvegarder la configuration dans un fichier <code>typings.json</code>.</p>
+<p>A partir du fichier typings.json seul, le contenu du r&#xE9;pertoire typings pourra &#xEA;tre g&#xE9;n&#xE9;r&#xE9; via <code>typings install</code>.</p>
+<p>Utiliser une biblioth&#xE8;que</p>
+<p>R&#xE9;f&#xE9;rencer le fichier de d&#xE9;finition dans le code via un commentaire sp&#xE9;cial de TypeScript.</p>
+<pre><code class="lang-ts"><span class="hljs-comment">///&lt;reference path=&quot;typings/globals/angular/index.d.ts&quot;/&gt;</span>
+angular.module(<span class="hljs-number">10</span>, []);
+<span class="hljs-comment">// Error:(3, 16) TS2345: Argument of type &apos;number&apos; is not</span>
+assignable to parameter of <span class="hljs-keyword">type</span> <span class="hljs-string">&apos;string&apos;</span>.
+</code></pre>
+<p>Depuis TypeScript 1.6, le compilateur est capable de trouver par lui-m&#xEA;me les interfaces des biblioth&#xE8;ques externes si elles sont pr&#xE9;sentes dans le r&#xE9;pertoire node_modules.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../02-types/12-classe.html" class="navigation navigation-prev " aria-label="Previous page: Classe">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../04-decorateur/" class="navigation navigation-next " aria-label="Next page: Décorateurs">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Bibliothèque externe","level":"1.4","depth":1,"next":{"title":"Décorateurs","level":"1.5","depth":1,"path":"04-decorateur/README.md","ref":"04-decorateur/README.md","articles":[]},"previous":{"title":"Classe","level":"1.3.12","depth":2,"path":"02-types/12-classe.md","ref":"02-types/12-classe.md","articles":[]},"dir":"ltr"},"config":{"plugins":["auto-summary"],"ignores":["_book","node_modules","sources"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"auto-summary":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Rossi Oddet","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Formation TypeScript","gitbook":"*"},"file":{"path":"03-bibliotheque-externe/README.md","mtime":"2018-04-12T14:25:47.475Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-12T14:27:01.699Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
