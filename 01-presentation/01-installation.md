@@ -1,4 +1,4 @@
-# TypeScript
+# Installation
 
 Installer TypeScript via Node
 
