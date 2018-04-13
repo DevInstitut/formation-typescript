@@ -12,7 +12,7 @@
   ],
   "pluginsConfig": {
     "github-edit": {
-      "repo": "DevInstitut/workshop-typescript",
+      "repo": "DevInstitut/formation-typescript",
       "branch": "master"
     }
   }
