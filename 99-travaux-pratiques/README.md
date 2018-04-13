@@ -240,6 +240,6 @@ node js/meteo.js
 
 * Dans la classe `SejourService`, ajouter une méthode de recherche de séjour par nom :
  * le service prend en paramètre un nom de type `string`
- * le service a un type retour `Sejour[]`.
+ * le service a un type retour `Sejour`.
 
 * Créer une instance de la classe `SejourService`, invoquer la méthode de recherche créée et afficher le résultat dans la console.
