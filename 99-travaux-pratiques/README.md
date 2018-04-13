@@ -145,7 +145,7 @@ let nantesCeMatin = new Meteo()
 Vous devriez avoir l'erreur de compilation suivante :
 
 ```
-meteo.ts(10,21): error TS2346: Supplied parameters do not match any signature of call target.
+meteo.ts(8,21): error TS2554: Expected 2 arguments, but got 0.
 ```
 
 Savez-vous pourquoi ?
