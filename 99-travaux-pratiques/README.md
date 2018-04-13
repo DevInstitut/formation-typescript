@@ -224,7 +224,7 @@ node js/meteo.js
 
 ```
 /typescript
-    meteo.js
+    meteo.ts
     voyage.ts
 ```
 
