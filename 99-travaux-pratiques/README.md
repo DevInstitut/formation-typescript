@@ -208,7 +208,7 @@ var Meteo = (function () {
     };
     return Meteo;
 }());
-var nantesCeMatin = new Meteo('Nantes', 20);
+var nantesCeMatin = new Meteo('Nantes', 12);
 console.log(nantesCeMatin.toString());
 ```
 
