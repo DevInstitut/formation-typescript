@@ -26,7 +26,7 @@ angular                    dt     http://angularjs.org                          
 angular-agility            dt     https://github.com/AngularAgility/AngularAgility                            1        2016-07-07T22:12:24.000Z
 ```
 
-Installer une fichier de définition.
+Installer un fichier de définition.
 
 ```
 typings install dt~angular --global --save
