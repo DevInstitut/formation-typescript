@@ -16,3 +16,5 @@
 * [Bibliothèque externe](03-bibliotheque-externe/README.md)
 * [Décorateurs](04-decorateur/README.md)
 * [Travaux Pratiques](99-travaux-pratiques/README.md)
+  * [#1 Syntaxe TypeScript](99-travaux-pratiques/01-syntaxe.md)
+  * [#2 BreizhCamp App](99-travaux-pratiques/02-breizhcamp-app.md)
