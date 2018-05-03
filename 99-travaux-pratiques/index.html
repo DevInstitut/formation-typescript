@@ -57,6 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="01-syntaxe.html" />
+    
     
     <link rel="prev" href="../04-decorateur/" />
     
@@ -344,6 +346,38 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="01-syntaxe.html">
+            
+                <a href="01-syntaxe.html">
+            
+                    
+                    #1 Syntaxe TypeScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="02-breizhcamp-app.html">
+            
+                <a href="02-breizhcamp-app.html">
+            
+                    
+                    #2 BreizhCamp App
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
         </li>
     
 
@@ -392,195 +426,10 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="travaux-pratiques">Travaux Pratiques</h1>
-<h2 id="r&#xE9;pertoire-tp">R&#xE9;pertoire TP</h2>
+<p>Deux parties :</p>
 <ul>
-<li>Cr&#xE9;er un r&#xE9;pertoire <code>/typescript</code>.</li>
-</ul>
-<pre><code>/typescript
-</code></pre><h2 id="compilateur-typescript">Compilateur TypeScript</h2>
-<ul>
-<li>Installer le compilateur TypeScript.</li>
-</ul>
-<pre><code>npm install -g typescript
-</code></pre><ul>
-<li>V&#xE9;rifier l&apos;installation de TypeScript</li>
-</ul>
-<pre><code>tsc -v
-Version 2.3.2
-</code></pre><h2 id="fichier-de-configuration-tsconfigjson">Fichier de configuration <code>tsconfig.json</code></h2>
-<ul>
-<li>Ex&#xE9;cuter la commande suivante pour g&#xE9;n&#xE9;rer le fichier de configuration <em>tsconfig.json</em> depuis le r&#xE9;pertoire <em>typescript</em>.</li>
-</ul>
-<pre><code>tsc --init
-</code></pre><ul>
-<li><p>Un fichier tsconfig.json est cr&#xE9;&#xE9;.</p>
-</li>
-<li><p>Modifier le param&#xE8;tre <em>outDir</em> comme suit :</p>
-</li>
-</ul>
-<pre><code>&quot;outDir&quot;: &quot;./js&quot;
-</code></pre><p>Les fichiers javascript seront g&#xE9;n&#xE9;r&#xE9;s dans le r&#xE9;pertoire <em>js</em>.</p>
-<h2 id="exemple-meteo">Exemple Meteo</h2>
-<ul>
-<li>Cr&#xE9;er un fichier <em>meteo.ts</em>.</li>
-</ul>
-<pre><code>/typescript
-    meteo.ts
-</code></pre><ul>
-<li>Se positionnez dans le r&#xE9;pertoire <em>typescript</em> et lancer le compilateur TypeScript en mode <em>watch</em>.</li>
-</ul>
-<pre><code>tsc --watch
-</code></pre><p>Un fichier <em>js/meteo.js</em> est g&#xE9;n&#xE9;r&#xE9;. Visualiser le.</p>
-<pre><code>/typescript
-    /js
-        meteo.js
-    meteo.ts
-</code></pre><ul>
-<li>Compl&#xE9;ter le fichier <em>meteo.ts</em> comme suit :</li>
-</ul>
-<pre><code class="lang-ts"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Meteo App&quot;</span>)
-</code></pre>
-<ul>
-<li><p>Visualiser le fichier <em>js/meteo.js</em>.</p>
-</li>
-<li><p>Ex&#xE9;cuter le code g&#xE9;n&#xE9;r&#xE9; :</p>
-</li>
-</ul>
-<pre><code>node js/meteo.js
-</code></pre><p>Dans la suite de l&apos;exercice, nous compl&#xE9;terons le fichier <em>meteo.ts</em>.</p>
-<ul>
-<li>Cr&#xE9;er une classe Meteo.</li>
-</ul>
-<pre><code class="lang-ts"><span class="hljs-keyword">class</span> Meteo {
-
-}
-</code></pre>
-<p>Visualiser le r&#xE9;sultat <code>js/meteo.js</code>.</p>
-<pre><code class="lang-js"><span class="hljs-meta">&quot;use strict&quot;</span>;
-<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Meteo App&quot;</span>);
-<span class="hljs-keyword">var</span> Meteo = (<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Meteo</span>(<span class="hljs-params"></span>) </span>{
-    }
-    <span class="hljs-keyword">return</span> Meteo;
-}());
-</code></pre>
-<p>Reconnaissez-vous le <em>Module Pattern</em> ?</p>
-<ul>
-<li>Ajouter un champ <em>ville</em> de type <code>string</code> :</li>
-</ul>
-<pre><code class="lang-ts"><span class="hljs-keyword">class</span> Meteo {
-
-    ville:<span class="hljs-built_in">string</span>
-
-}
-</code></pre>
-<p>Visualiser le r&#xE9;sultat <code>js/meteo.js</code>.</p>
-<p>Il n&apos;y aucun changement.</p>
-<p>Sauriez-vous expliquer pourquoi ?</p>
-<ul>
-<li>Supprimer le champ <em>ville</em>. Ajouter le constructeur suivant :</li>
-</ul>
-<pre><code class="lang-ts"><span class="hljs-keyword">class</span> Meteo {
-
-    <span class="hljs-keyword">constructor</span>(private _ville:string, private _temperature:number){
-    }
-
-}
-</code></pre>
-<ul>
-<li>Cr&#xE9;er un objet Meteo</li>
-</ul>
-<pre><code class="lang-ts"><span class="hljs-comment">// ...</span>
-
-<span class="hljs-keyword">let</span> nantesCeMatin = <span class="hljs-keyword">new</span> Meteo()
-</code></pre>
-<p>Vous devriez avoir l&apos;erreur de compilation suivante :</p>
-<pre><code>meteo.ts(8,21): error TS2554: Expected 2 arguments, but got 0.
-</code></pre><p>Savez-vous pourquoi ?</p>
-<p>Visualiser le fichier <em>js/meteo.js</em> :</p>
-<pre><code class="lang-ts"><span class="hljs-meta">&quot;use strict&quot;</span>;
-<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Meteo App&quot;</span>);
-<span class="hljs-keyword">var</span> Meteo = (<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Meteo</span>(<span class="hljs-params">_ville, _temperature</span>) </span>{
-        <span class="hljs-keyword">this</span>._ville = _ville;
-        <span class="hljs-keyword">this</span>._temperature = _temperature;
-    }
-    <span class="hljs-keyword">return</span> Meteo;
-}());
-<span class="hljs-keyword">var</span> nantesCeMatin = <span class="hljs-keyword">new</span> Meteo();
-</code></pre>
-<p>Malgr&#xE9; l&apos;erreur de compilation, le fichier g&#xE9;n&#xE9;r&#xE9; contient la mise &#xE0; jour.
-Ceci illustre le caract&#xE8;re permissif du compilateur TypeScript.</p>
-<ul>
-<li>Corriger l&apos;erreur de compilation :</li>
-</ul>
-<pre><code class="lang-ts"><span class="hljs-keyword">let</span> nantesCeMatin = <span class="hljs-keyword">new</span> Meteo(<span class="hljs-string">&apos;Nantes&apos;</span>, <span class="hljs-number">12</span>);
-</code></pre>
-<ul>
-<li>Ajouter la m&#xE9;thode <em>toString</em> et afficher son r&#xE9;sultat dans le console.</li>
-</ul>
-<pre><code class="lang-ts"><span class="hljs-keyword">class</span> Meteo {
-    <span class="hljs-keyword">constructor</span>(private _ville:string, private _temperature:number){
-    }
-
-    <span class="hljs-comment">// A AJOUTER</span>
-    toString():<span class="hljs-built_in">string</span> {
-        <span class="hljs-keyword">return</span>  <span class="hljs-string">`<span class="hljs-subst">${this._ville}</span> - <span class="hljs-subst">${this._temperature}</span>&#xB0;C`</span>
-    }
-}
-<span class="hljs-keyword">let</span> nantesCeMatin = <span class="hljs-keyword">new</span> Meteo(<span class="hljs-string">&apos;Nantes&apos;</span>, <span class="hljs-number">12</span>);
-
-<span class="hljs-comment">// A AJOUTER</span>
-<span class="hljs-built_in">console</span>.log(nantesCeMatin.toString())
-</code></pre>
-<ul>
-<li>Visualiser le fichier g&#xE9;n&#xE9;r&#xE9;</li>
-</ul>
-<pre><code class="lang-js"><span class="hljs-meta">&quot;use strict&quot;</span>;
-<span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Meteo App&quot;</span>);
-<span class="hljs-keyword">var</span> Meteo = (<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Meteo</span>(<span class="hljs-params">_ville, _temperature</span>) </span>{
-        <span class="hljs-keyword">this</span>._ville = _ville;
-        <span class="hljs-keyword">this</span>._temperature = _temperature;
-    }
-    Meteo.prototype.toString = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._ville + <span class="hljs-string">&quot; - &quot;</span> + <span class="hljs-keyword">this</span>._temperature + <span class="hljs-string">&quot;\u00B0C&quot;</span>;
-    };
-    <span class="hljs-keyword">return</span> Meteo;
-}());
-<span class="hljs-keyword">var</span> nantesCeMatin = <span class="hljs-keyword">new</span> Meteo(<span class="hljs-string">&apos;Nantes&apos;</span>, <span class="hljs-number">12</span>);
-<span class="hljs-built_in">console</span>.log(nantesCeMatin.toString());
-</code></pre>
-<ul>
-<li>Ex&#xE9;cuter le code g&#xE9;n&#xE9;r&#xE9; :</li>
-</ul>
-<pre><code>node js/meteo.js
-</code></pre><h2 id="exemple-voyage">Exemple Voyage</h2>
-<ul>
-<li>Cr&#xE9;er un fichier <code>voyage.ts</code>.</li>
-</ul>
-<pre><code>/typescript
-    meteo.ts
-    voyage.ts
-</code></pre><ul>
-<li><p>Cr&#xE9;er une classe <code>Sejour</code> avec les propri&#xE9;t&#xE9;s <strong>priv&#xE9;es</strong> suivantes :
-<strong> nom (string)
-</strong> prix (number)</p>
-</li>
-<li><p>Ajouter des <em>getters</em> permettant d&apos;acc&#xE9;der aux propri&#xE9;t&#xE9;s priv&#xE9;es.</p>
-</li>
-<li><p>Cr&#xE9;er une classe <code>SejourService</code> qui poss&#xE8;de une propri&#xE9;t&#xE9; priv&#xE9;e de type <code>Sejour[]</code>;</p>
-</li>
-<li><p>Dans le constructeur de la classe <code>SejourService</code>, initialiser la propri&#xE9;t&#xE9; Sejour[] avec plusieurs objets de type <code>Sejour</code>.</p>
-</li>
-<li><p>Dans la classe <code>SejourService</code>, ajouter une m&#xE9;thode de recherche de s&#xE9;jour par nom :</p>
-<ul>
-<li>le service prend en param&#xE8;tre un nom de type <code>string</code></li>
-<li>le service a un type retour <code>Sejour</code>.</li>
-</ul>
-</li>
-<li><p>Cr&#xE9;er une instance de la classe <code>SejourService</code>, invoquer la m&#xE9;thode de recherche cr&#xE9;&#xE9;e et afficher le r&#xE9;sultat dans la console.</p>
-</li>
+<li>Syntaxe : introduction &#xE0; TypeScript.</li>
+<li>Application BreizhCamp : migration de <a href="http://www.dev-institut.fr/formation-intro-node/03-Travaux-Pratiques/" target="_blank">l&apos;application console r&#xE9;alis&#xE9;e lors de l&apos;introduction sur Node</a> vers TypeScript.</li>
 </ul>
 
                                 
@@ -609,10 +458,14 @@ Ceci illustre le caract&#xE8;re permissif du compilateur TypeScript.</p>
 
             
                 
-                <a href="../04-decorateur/" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Décorateurs">
+                <a href="../04-decorateur/" class="navigation navigation-prev " aria-label="Previous page: Décorateurs">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="01-syntaxe.html" class="navigation navigation-next " aria-label="Next page: #1 Syntaxe TypeScript">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -621,7 +474,7 @@ Ceci illustre le caract&#xE8;re permissif du compilateur TypeScript.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Travaux Pratiques","level":"1.6","depth":1,"previous":{"title":"Décorateurs","level":"1.5","depth":1,"path":"04-decorateur/README.md","ref":"04-decorateur/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["auto-summary","github-edit"],"ignores":["_book","node_modules","sources"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"github-edit":{"repo":"DevInstitut/formation-typescript","branch":"master"},"auto-summary":{},"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"fontsettings":{"family":"sans","size":2,"theme":"white"},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","author":"Rossi Oddet","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Formation TypeScript","gitbook":"*"},"file":{"path":"99-travaux-pratiques/README.md","mtime":"2018-04-13T15:43:29.449Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-13T15:46:48.963Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Travaux Pratiques","level":"1.6","depth":1,"next":{"title":"#1 Syntaxe TypeScript","level":"1.6.1","depth":2,"path":"99-travaux-pratiques/01-syntaxe.md","ref":"99-travaux-pratiques/01-syntaxe.md","articles":[]},"previous":{"title":"Décorateurs","level":"1.5","depth":1,"path":"04-decorateur/README.md","ref":"04-decorateur/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["auto-summary","github-edit"],"ignores":["_book","node_modules","sources"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"github-edit":{"repo":"DevInstitut/formation-typescript","branch":"master"},"auto-summary":{},"highlight":{},"search":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"fontsettings":{"family":"sans","size":2,"theme":"white"},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}}},"theme":"default","author":"Rossi Oddet","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Formation TypeScript","gitbook":"*"},"file":{"path":"99-travaux-pratiques/README.md","mtime":"2018-05-03T13:44:45.465Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-03T13:47:30.610Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
