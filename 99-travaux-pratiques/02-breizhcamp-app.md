@@ -7,7 +7,7 @@ Pour exécuter du code TypeScript dans un environnement Node, nous allons utilis
 * Installer les dépendances :
 
 ```
-npm install --save ts-node typescript
+npm install --save ts-node typescript @types/node
 ```
 
 * Compléter le fichier `package.json` :
