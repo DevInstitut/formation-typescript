@@ -62,7 +62,7 @@ import request from 'request-promise-native';
 
 ## Typage TypeScript
 
-* Créer un fichier `domains.js` qui contiendra les structures de données métiers.
+* Créer un fichier `domains.ts` qui contiendra les structures de données métiers.
  * Ajouter une classe `Session` qui représente une session
  * Ajouter une classe `Presentateur` qui réprésente un présentateur
  
