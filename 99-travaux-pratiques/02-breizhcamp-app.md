@@ -7,7 +7,7 @@ Pour exécuter du code TypeScript dans un environnement Node, nous allons utilis
 * Installer les dépendances :
 
 ```
-npm install --save ts-node typescript @types/node
+npm install --save ts-node typescript @types/node @types/request-promise-native @types/jsdom
 ```
 
 * Compléter le fichier `package.json` :
@@ -17,6 +17,26 @@ npm install --save ts-node typescript @types/node
     "start": "ts-node index.ts"
   },
 ```
+
+* Générer le fichier tsconfig.json
+
+```
+tsc --init
+```
+
+* Compléter les librairies accessibles :
+
+```json
+{
+  "compilerOptions": {
+  ...
+     "lib": ["dom", "dom.iterable", "esnext", "scripthost"],                             /* Specify library files to be included in the compilation. */
+  ... 
+  }
+}
+```
+
+
 
 ## Migration TypeScript
 
@@ -30,6 +50,13 @@ npm install --save ts-node typescript @types/node
 ```
 
 * Modifier les imports / exports en utilisant le système de modules ES2015 (`import` et `export`).
+
+Exemple d'import :
+
+```js
+import jsdom from 'jsdom';
+import request from 'request-promise-native';
+```
 
 * Vérifier le fonctionnement de l'application (à ce stade le typage `any` est toléré).
 
